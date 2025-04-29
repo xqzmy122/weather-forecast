@@ -5,8 +5,7 @@
 }
 
 :root {
-  --main-container-color: ;
-  --main-container-sunny-color: linear-gradient(337deg, #dba100 0%, #cfbe4f 100%); 
+  --main-container-color: linear-gradient(337deg, #dba100 0%, #cfbe4f 100%);
   --main-container-cloudy-color: linear-gradient(337deg, #383743 0%, #8a7e91 100%);
 }
 
@@ -32,8 +31,9 @@ input {
 .main {
   width: 500px;
   border-radius: 10px;
-  background: var(--main-container-cloudy-color);
+  background: var(--main-container-color);
   margin-top: 100px;
+  transition: 0.5s ease-in-out;
 }
 
 .main-body {
@@ -62,11 +62,12 @@ input {
 }
 
 .weather__city {
-  font-size: 4em;
+  font-size: 3em;
+  text-align: center;
 }
 
 .weather__country {
-  font-size: 2em;
+  font-size: 1.3em;
 }
 
 .weather__img img{ 
