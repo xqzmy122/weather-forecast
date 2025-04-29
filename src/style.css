@@ -1,0 +1,107 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-container-color: ;
+  --main-container-sunny-color: linear-gradient(337deg, #dba100 0%, #cfbe4f 100%); 
+  --main-container-cloudy-color: linear-gradient(337deg, #383743 0%, #8a7e91 100%);
+}
+
+body {
+  background-color: #11212D;
+  font-family: 'Montserrat';
+
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+.main {
+  width: 500px;
+  border-radius: 10px;
+  background: var(--main-container-cloudy-color);
+  margin-top: 100px;
+}
+
+.main-body {
+  padding: 10px;
+}
+
+.main__search {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__search-field {
+  border-radius: 20px;
+  border: none;
+  width: 70%;
+  font-size: 1em;
+  text-align: start;
+  padding: 5px 10px;
+}
+
+.main__weather-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.weather__city {
+  font-size: 4em;
+}
+
+.weather__country {
+  font-size: 2em;
+}
+
+.weather__img img{ 
+  padding: 10px 0px;
+}
+
+.weather__degree {
+  font-size: 3em;
+}
+
+.weather__feels-like {
+  font-size: 1.6em;
+}
+
+.weather__details {
+  padding: 10px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.weather__wind,
+.weather__humidity {
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.weather__wind-img {
+  width: 50px;
+  height: auto;
+}
+
+.weather__humidity-img {
+  width: 40px;
+  height: auto;
+}
