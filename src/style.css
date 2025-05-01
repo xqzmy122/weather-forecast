@@ -5,14 +5,14 @@
 }
 
 :root {
-  --main-container-color: linear-gradient(337deg, #dba100 0%, #cfbe4f 100%);
-  --main-container-cloudy-color: linear-gradient(337deg, #383743 0%, #8a7e91 100%);
+  --main-container-color: #c1e8ff;
+  --body-color: black;
 }
 
 body {
   background-color: #11212D;
   font-family: 'Montserrat';
-
+  color: var(--body-color)
 }
 
 button {
@@ -54,6 +54,10 @@ input {
   padding: 5px 10px;
 }
 
+.theme-btn {
+  width: 30px;
+}
+
 .main__weather-info {
   display: flex;
   flex-direction: column;
@@ -61,17 +65,22 @@ input {
   padding: 10px 0px;
 }
 
+.weather__location {
+  text-align: center;
+}
+
 .weather__city {
   font-size: 3em;
-  text-align: center;
 }
 
 .weather__country {
   font-size: 1.3em;
 }
 
-.weather__img img{ 
+.weather__img{ 
   padding: 10px 0px;
+  width: 100px;
+  height: auto;
 }
 
 .weather__degree {
@@ -79,7 +88,7 @@ input {
 }
 
 .weather__feels-like {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .weather__details {
@@ -91,7 +100,6 @@ input {
 
 .weather__wind,
 .weather__humidity {
-  color: white;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -105,4 +113,9 @@ input {
 .weather__humidity-img {
   width: 40px;
   height: auto;
+}
+
+.weather__wind-img,
+.weather__humidity-img {
+  color: black;
 }

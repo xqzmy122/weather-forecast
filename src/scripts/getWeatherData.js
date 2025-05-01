@@ -8,8 +8,8 @@ class WeatherData {
     const weatherData = await response.json()
     console.log(weatherData.current.condition.text)
 
-    return new Weather(weatherData.location.region, weatherData.location.country, Math.floor(weatherData.current.temp_c), Math.floor(weatherData.current.feelslike_c), weatherData.current.wind_mph,
-      weatherData.current.humidity, weatherData.current.condition.text)
+    return new Weather(weatherData.location.name, weatherData.location.country, Math.floor(weatherData.current.temp_c), Math.floor(weatherData.current.feelslike_c), weatherData.current.wind_mph,
+      weatherData.current.humidity, weatherData.current.condition.text, weatherData.current.condition.icon)
   }
 }
 
